@@ -1,0 +1,6 @@
+<ul class="menu">
+  <li class="button-wrapper" [ngClass]="{'button-wrapper--active': item.active}" *ngFor="let item of items">
+    <button *ngIf="item.type === 'button'" (click)="item.onclick()"></button>
+    <a *ngIf="item.type === 'link'" [routerLink]="[item.routerLink]">{{ item.label }}</a>
+  </li>
+</ul>

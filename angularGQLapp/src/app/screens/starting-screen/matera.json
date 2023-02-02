@@ -1,0 +1,864 @@
+[
+  {
+    "label": "Healing Materia",
+    "color": "green",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3",
+      "Level 4"
+    ],
+    "value": [
+      "600 G",
+      "Use Cure",
+      "Use Cura",
+      "Use Regen",
+      "Use Curaga"
+    ]
+  },
+  {
+    "label": "Cleansing Materia",
+    "color": "green",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "300 Gil",
+      "Use Poisona",
+      "Use Esuna",
+      "Use Resist"
+    ]
+  },
+  {
+    "label": "Revival Materia",
+    "color": "green",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "",
+      "Raise",
+      "Arise",
+      ""
+    ]
+  },
+  {
+    "label": "Fire Materia",
+    "color": "green",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "500 G",
+      "Use Fire",
+      "Use Fira",
+      "Use Friaga"
+    ]
+  },
+  {
+    "label": "Ice Materia",
+    "color": "green",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "500 G",
+      "Use Blizzard",
+      "Use Blizzara",
+      "Use Blizzaga"
+    ]
+  },
+  {
+    "label": "Lightning Materia",
+    "color": "green",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "500 G",
+      "Use Thunder",
+      "Use Thundara",
+      "Use Thundaga"
+    ]
+  },
+  {
+    "label": "Barrier Materia",
+    "color": "green",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "1,500 G",
+      "Use Barrier",
+      "Use Manaward",
+      "Use Manawall"
+    ]
+  },
+  {
+    "label": "Wind Materia",
+    "color": "green",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "2,000 G",
+      "Use Aero",
+      "Use Aerora",
+      "Use Aeroga"
+    ]
+  },
+  {
+    "label": "Poison Materia",
+    "color": "green",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "1,500 G",
+      "Use Bio",
+      "Use Biora",
+      "Use Bioga"
+    ]
+  },
+  {
+    "label": "Binding Materia",
+    "color": "green",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "-",
+      "Use Sleep",
+      "Use Silence",
+      "Use Berserk"
+    ]
+  },
+  {
+    "label": "Subversion Materia",
+    "color": "green",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "-",
+      "Use Breach",
+      "Use Dispel",
+      ""
+    ]
+  },
+  {
+    "label": "Time Materia",
+    "color": "green",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "-",
+      "Use Haste",
+      "Use Slow",
+      "Use Stop"
+    ]
+  },
+  {
+    "label": "Elemental Materia",
+    "color": "blue",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "-",
+      "Weapon: Adds 8% linked elemental damage dealt.\nArmor: Halves linked elemental damage taken.",
+      "Weapon: Adds 15% linked elemental damage dealt.\nArmor: Prevents linked elemental damage taken.",
+      "Weapon: Adds 23% linked elemental damage dealt.\nArmor: Absorbs linked elemental damage taken."
+    ]
+  },
+  {
+    "label": "Magnify Materia",
+    "color": "blue",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "-",
+      "Expand range of linked Materia (effect reduced by 60% when expanded).",
+      "Expand range of linked Materia (effect reduced by 45% when expanded).",
+      "Expand range of linked Materia (effect reduced by 25% when expanded)."
+    ]
+  },
+  {
+    "label": "Warding Materia",
+    "color": "blue",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "",
+      "Reduce debuff duration by 25%",
+      "Reduce debuff duration by 50%",
+      "Reduce debuff duration by 100%"
+    ]
+  },
+  {
+    "label": "Synergy Materia",
+    "color": "blue",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "100 G",
+      "Use Synergy",
+      "-",
+      "-"
+    ]
+  },
+  {
+    "label": "HP Absorption Materia",
+    "color": "blue",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "100",
+      "Absorb 20% of damage dealt",
+      "Absorb 30% of damage dealt",
+      "Absorb 40% of damage dealt"
+    ]
+  },
+  {
+    "label": "MP Absorption Materia",
+    "color": "blue",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "label": "Pedometer Materia",
+    "color": "blue",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "",
+      "Current Steps: 0/ Goal: 5,000",
+      "",
+      ""
+    ]
+  },
+  {
+    "label": "AP Up Materia",
+    "color": "blue",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "",
+      "Increase AP earned for linked materia by 100%",
+      "",
+      ""
+    ]
+  },
+  {
+    "label": "Chakra Materia",
+    "color": "yellow",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3",
+      "Level 4",
+      "Level 5"
+    ],
+    "value": [
+      "",
+      "Use Chakra (Restores 20% HP of damage taken)",
+      "Use Chakra (Restores 25% HP of damage taken)",
+      "Use Chakra (Restores 30% HP of damage taken)",
+      "Use Chakra (Restores 35% HP of damage taken)",
+      "Use Chakra (Restores 40% HP of damage taken)"
+    ]
+  },
+  {
+    "label": "Assess Materia",
+    "color": "yellow",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "1,000",
+      "Use Assess on a single target.",
+      "Use Assess on all targets.",
+      "-"
+    ]
+  },
+  {
+    "label": "Prayer Materia",
+    "color": "yellow",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3",
+      "Level 4",
+      "Level 5"
+    ],
+    "value": [
+      "",
+      "Use Pray (Slight HP restoration)",
+      "Use Pray (Modest HP restoration)",
+      "Use Pray (Moderate HP restoration)",
+      "Use Pray (Great HP restoration)",
+      "Use Pray (Significant HP restoration)"
+    ]
+  },
+  {
+    "label": "Steal Materia",
+    "color": "yellow",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "100 G",
+      "Use Steal",
+      "---",
+      "---"
+    ]
+  },
+  {
+    "label": "ATB Boost Materia",
+    "color": "yellow",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3",
+      "Level 4",
+      "Level 5"
+    ],
+    "value": [
+      "",
+      "ATB Boost cooldown 360 seconds.",
+      "ATB Boost cooldown 300 seconds.",
+      "ATB Boost cooldown 240 seconds.",
+      "ATB Boost cooldown 180 seconds.",
+      "ATB Boost cooldown 120 seconds."
+    ]
+  },
+  {
+    "label": "Enemy Skill Materia",
+    "color": "yellow",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "",
+      "Learn and use enemy skills.",
+      "---",
+      "---"
+    ]
+  },
+  {
+    "label": "HP Up Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3",
+      "Level 4",
+      "Level 5"
+    ],
+    "value": [
+      "2,000 G",
+      "Max HP boost of 10%",
+      "Max HP boost of 20%",
+      "Max HP boost of 30%",
+      "Max HP boost of 40%",
+      "Max HP boost of 50%"
+    ]
+  },
+  {
+    "label": "MP Up Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3",
+      "Level 4",
+      "Level 5"
+    ],
+    "value": [
+      "2,000 G",
+      "Max MP boost of 10%",
+      "Max MP boost of 20%",
+      "Max MP boost of 30%",
+      "Max MP boost of 40%",
+      "Max MP boost of 50%"
+    ]
+  },
+  {
+    "label": "Magic Up Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3",
+      "Level 4",
+      "Level 5"
+    ],
+    "value": [
+      "",
+      "Magic boost of 5%",
+      "Magic boost of 10%",
+      "Magic boost of 15%",
+      "Magic boost of 20%",
+      "Magic boost of 25%"
+    ]
+  },
+  {
+    "label": "Luck Up Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3",
+      "Level 4",
+      "Level 5"
+    ],
+    "value": [
+      "",
+      "Luck boost of 10%",
+      "Luck boost of 20%",
+      "Luck boost of 30%",
+      "Luck boost of 40%",
+      "Luck boost of 50%"
+    ]
+  },
+  {
+    "label": "Gil Up Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "label": "EXP Up Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "label": "Deadly Dodge Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "600 G",
+      "Use Deadly Dodge",
+      "Increase the potency and effects of Deadly Dodge",
+      ""
+    ]
+  },
+  {
+    "label": "Parry Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "Use Parry",
+      "Increase the damage dealt with Parry and slight increase in ATB boost.",
+      "",
+      ""
+    ]
+  },
+  {
+    "label": "First Strike Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "100 G",
+      "Small ATB increase at start of battle.",
+      "Medium ATB increase at start of battle.",
+      "Large ATB increase at start of battle."
+    ]
+  },
+  {
+    "label": "Refocus Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "",
+      "Use the Refocus limit break",
+      "",
+      ""
+    ]
+  },
+  {
+    "label": "Auto-Cure Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "100 G",
+      "Auto-Cure (up to 3 times per battle)",
+      "Auto-Cure (up to 10 times per battle)",
+      "-"
+    ]
+  },
+  {
+    "label": "Item Master Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "100 G",
+      "Increase item efficacy by 30% during battle.",
+      "Increase item efficacy by 40% during battle.",
+      "Increase item efficacy by 50% during battle."
+    ]
+  },
+  {
+    "label": "Provoke Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "100 G",
+      "Provoke (effect: 60s / cooldown: 90s)",
+      "Provoke (effect: 90s / cooldown: 60s)",
+      "Provoke (effect: 120s / cooldown: 30s)"
+    ]
+  },
+  {
+    "label": "ATB Assist Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "100 G",
+      "Small ATB increase for ally when repeating command 2 times.",
+      "Medium ATB increase for ally when repeating command 2 times.",
+      "Large ATB increase for ally when repeating command 2 times."
+    ]
+  },
+  {
+    "label": "ATB Stagger Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "100 G",
+      "Small ATB boost on staggering foe.",
+      "Medium ATB boost on staggering foe.",
+      "Large ATB boost on staggering foe."
+    ]
+  },
+  {
+    "label": "Steadfast Block Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "100 G",
+      "Take slightly less damage + small ATB boost when guarding.",
+      "Take less damage + medium ATB boost when guarding.",
+      "Take even less damage + large ATB boost when guarding."
+    ]
+  },
+  {
+    "label": "Skill Master Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "",
+      "Small ATB increase when using 3 types of commands.",
+      "Medium ATB increase when using 3 types of commands.",
+      "Large ATB increase when using 3 types of commands."
+    ]
+  },
+  {
+    "label": "Chocobo & Moogle Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "-",
+      "Invoke a Chocobo and Moogle to aid you in battle.\nRole: Deals Damage\nElement: Wind (Chocobo) / None (Moogle)\nUltimate Attack: Stampede (Wind)",
+      "-",
+      "-"
+    ]
+  },
+  {
+    "label": "Ifrit Materia",
+    "color": "purple",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "-",
+      "Invoke Ifrit to aid you in battle.\nRole: Deals Damage\nElement: Fire\nUltimate Attack: Hellfire",
+      "-",
+      "-"
+    ]
+  },
+  {
+    "label": "Shiva Materia",
+    "color": "red",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "-",
+      "Invoke Shiva to aid you in battle.\nRole: Deals Damage\nElement: Ice\nUltimate Attack: Diamond Dust",
+      "-",
+      "-"
+    ]
+  },
+  {
+    "label": "Leviathan Materia",
+    "color": "red",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "-",
+      "Invoke Leviathan to aid you in battle.\nRole: Deals Damage\nElement: Non-Elemental\nUltimate Attack: Tidal Wave",
+      "-",
+      "-"
+    ]
+  },
+  {
+    "label": "Bahamut Materia",
+    "color": "red",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "-",
+      "Invoke Bahamut to aid you in battle.\nRole: Deals Damage\nElement: Non-Elemental\nUltimate Attack: Megaflare",
+      "-",
+      "-"
+    ]
+  },
+  {
+    "label": "Fat Chocobo Materia",
+    "color": "red",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "-",
+      "Invoke Fat Chocobo to aid you in battle.\nRole: Deals Damage\nElement: Non-Elemental\nUltimate Attack: Kerplunk",
+      "-",
+      "-"
+    ]
+  },
+  {
+    "label": "Cactuar Materia",
+    "color": "red",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "-",
+      "Invoke a Cactuar to aid you in battle.\nRole: Deals Fixed Damage\nElement: Non-Elemental\nUltimate Attack: 10,000 Needles?",
+      "-",
+      "-"
+    ]
+  },
+  {
+    "label": "Carbuncle Materia",
+    "color": "red",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "",
+      "Invoke Carbuncle to aid you in battle.\nRole: Heals / Supports\nElement: Non-Elemental\nUltimate Attack: Diamond Dazzle",
+      "",
+      ""
+    ]
+  },
+  {
+    "label": "Chocobo Chick Materia",
+    "color": "red",
+    "headings": [
+      "Buy Price",
+      "Level 1",
+      "Level 2",
+      "Level 3"
+    ],
+    "value": [
+      "",
+      "Invoke a chocobo chick to aid you in battle.\nRole: Deals Damage\nElement: Fire / Ice / Lightning / Wind\nUltimate Attack: Chocoflare (Non-Elemental)",
+      "",
+      ""
+    ]
+  }
+]

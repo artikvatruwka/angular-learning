@@ -1,0 +1,25 @@
+type Materia {
+    _id: String
+    label: String
+    color: String
+    headers: [String]
+    values: [String]
+}
+
+input MateriaInput {
+    label: String
+    color: String
+    headers: [String]
+    values: [String]
+}
+
+type Query {
+    materia(ID: ID!): Materia!
+    getMaterias: [Materia] 
+}
+
+type Mutation {
+    createMateria(materia  : MateriaInput!): Boolean
+    removeMateria(ID: ID!): Boolean
+    updateMateria(ID: ID!, materia: MateriaInput!): Boolean
+}
