@@ -13,23 +13,23 @@ export class StartingScreenComponent {
     {
       type: 'link',
       label: 'New Game',
-      routerLink: routeNames.mainMenu,
+      routerLink: `/${routeNames.mainMenu}`,
     },
     {
       type: 'link',
       label: 'Continue',
-      routerLink: routeNames.mainMenu,
+      routerLink: `/${routeNames.mainMenu}`,
       disabled: true,
     },
     {
       type: 'link',
       label: 'Load Game',
-      routerLink: routeNames.loading,
+      routerLink: `/${routeNames.loading}`,
     },
     {
       type: 'link',
       label: 'Options',
-      routerLink: routeNames.starting,
+      routerLink: `/${routeNames.inventory}`,
     },
   ];
 }

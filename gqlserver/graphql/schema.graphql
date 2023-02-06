@@ -2,20 +2,20 @@ type Materia {
     _id: String
     label: String
     color: String
-    headers: [String]
-    values: [String]
+    headings: [String!]!
+    value: [String!]!
 }
 
 input MateriaInput {
     label: String
     color: String
-    headers: [String]
-    values: [String]
+    headings: [String]
+    value: [String]
 }
 
 type Query {
     materia(ID: ID!): Materia!
-    getMaterias: [Materia] 
+    getMaterias: [Materia]! 
 }
 
 type Mutation {

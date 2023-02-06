@@ -1,0 +1,43 @@
+diff --git a/node_modules/apollo-angular/query-ref.d.ts b/node_modules/apollo-angular/query-ref.d.ts
+index 6aadcdb..f1b0517 100644
+--- a/node_modules/apollo-angular/query-ref.d.ts
++++ b/node_modules/apollo-angular/query-ref.d.ts
+@@ -1,14 +1,14 @@
+ import { NgZone } from '@angular/core';
+-import type { ApolloQueryResult, ObservableQuery, ApolloError, FetchMoreQueryOptions, SubscribeToMoreOptions, UpdateQueryOptions, TypedDocumentNode } from '@apollo/client/core';
++import type { ApolloQueryResult, ObservableQuery, ApolloError, FetchMoreQueryOptions, SubscribeToMoreOptions, UpdateQueryOptions, TypedDocumentNode, OperationVariables } from '@apollo/client/core';
+ import { Observable } from 'rxjs';
+-import { WatchQueryOptions, EmptyObject } from './types';
++import { WatchQueryOptions, EmptyObject } from './types.d';
+ export declare type QueryRefFromDocument<T extends TypedDocumentNode> = T extends TypedDocumentNode<infer R, infer V> ? QueryRef<R, V> : never;
+ export declare class QueryRef<T, V = EmptyObject> {
+     private obsQuery;
+     valueChanges: Observable<ApolloQueryResult<T>>;
+-    queryId: ObservableQuery<T, V>['queryId'];
+-    constructor(obsQuery: ObservableQuery<T, V>, ngZone: NgZone, options: WatchQueryOptions<V, T>);
+-    get options(): import("@apollo/client/core").WatchQueryOptions<V, T>;
++    queryId: ObservableQuery<T, V extends OperationVariables ? OperationVariables : OperationVariables>['queryId'];
++    constructor(obsQuery: ObservableQuery<T, V extends OperationVariables ? OperationVariables : OperationVariables>, ngZone: NgZone, options: WatchQueryOptions<V, T>);
++    get options(): import("@apollo/client/core").WatchQueryOptions<V extends OperationVariables ? OperationVariables : OperationVariables, T>;
+     get variables(): V;
+     result(): Promise<ApolloQueryResult<T>>;
+     getCurrentResult(): ApolloQueryResult<T>;
+diff --git a/node_modules/apollo-angular/types.d.ts b/node_modules/apollo-angular/types.d.ts
+index 98f097b..dd4dedd 100644
+--- a/node_modules/apollo-angular/types.d.ts
++++ b/node_modules/apollo-angular/types.d.ts
+@@ -1,4 +1,4 @@
+-import type { WatchQueryOptions as CoreWatchQueryOptions, QueryOptions as CoreQueryOptions, MutationOptions as CoreMutationOptions, SubscriptionOptions as CoreSubscriptionOptions, ApolloClientOptions, FetchResult, TypedDocumentNode } from '@apollo/client/core';
++import type { WatchQueryOptions as CoreWatchQueryOptions, QueryOptions as CoreQueryOptions, MutationOptions as CoreMutationOptions, SubscriptionOptions as CoreSubscriptionOptions, ApolloClientOptions, FetchResult, TypedDocumentNode, OperationVariables } from '@apollo/client/core';
+ import type { ExecutionResult } from 'graphql';
+ export declare type EmptyObject = {
+     [key: string]: any;
+@@ -20,7 +20,7 @@ export interface MutationOptionsAlone<TData = EmptyObject, TVariables = any> ext
+ }
+ export interface SubscriptionOptionsAlone<TVariables = EmptyObject, TData = any> extends Omit<CoreSubscriptionOptions<TVariables, TData>, 'query' | 'variables'> {
+ }
+-export interface WatchQueryOptions<TVariables = EmptyObject, TData = any> extends CoreWatchQueryOptions<TVariables, TData> {
++export interface WatchQueryOptions<TVariables = EmptyObject, TData = any> extends CoreWatchQueryOptions<TVariables extends OperationVariables ? OperationVariables : OperationVariables, TData> {
+     /**
+      * Observable starts with `{ loading: true }`.
+      * There's a big chance the next major version will enable that by default.

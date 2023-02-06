@@ -9,7 +9,7 @@ interface BaseMenuItem {
 }
 
 export interface MenuItemLink extends BaseMenuItem {
-  routerLink: routeNames;
+  routerLink: string;
   type: 'link';
 }
 

@@ -10,8 +10,12 @@ import { InventoryScreenComponent } from './screens/inventory-screen/inventory-s
 import { LoadingScreenComponent } from './screens/loading-screen/loading-screen.component';
 import { MainMenuScreenComponent } from './screens/main-menu-screen/main-menu-screen.component';
 import { ListMenuComponent } from './components/list-menu/list-menu.component';
+import { IconComponent } from './components/icon/icon.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
+import { MateriaListComponent } from './screens/inventory-screen/materia-list/materia-list.component';
+import { MateriaViewComponent } from './screens/inventory-screen/materia-view/materia-view.component';
+import { ItemsListComponent } from './components/items-list/items-list.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +27,13 @@ import { HttpClientModule } from '@angular/common/http';
     LoadingScreenComponent,
     MainMenuScreenComponent,
     ListMenuComponent,
+    IconComponent,
+    MateriaListComponent,
+    MateriaViewComponent,
+    ItemsListComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, GraphQLModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, GraphQLModule, HttpClientModule],
 })
 export class AppModule {}

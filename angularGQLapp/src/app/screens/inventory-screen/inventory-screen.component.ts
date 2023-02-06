@@ -1,12 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { Apollo } from 'apollo-angular';
+import { inventoryRouteNames } from './../../app-routing.module';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-inventory-screen',
   templateUrl: './inventory-screen.component.html',
   styleUrls: ['./inventory-screen.component.scss'],
 })
-export class InventoryScreenComponent implements OnInit {
-  constructor(private apollo: Apollo) {}
-  ngOnInit(): void {}
+export class InventoryScreenComponent {
+  links = inventoryRouteNames;
 }

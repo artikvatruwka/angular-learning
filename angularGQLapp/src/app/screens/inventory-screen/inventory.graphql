@@ -1,0 +1,17 @@
+
+query MateriaList {
+  getMaterias {
+    _id
+    label
+    color
+  }
+}
+
+query MateriaView($materiaId: ID!) {
+  materia(ID: $materiaId) { 
+    label
+    color
+    headings
+    value
+  }
+}

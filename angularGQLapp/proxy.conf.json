@@ -1,0 +1,11 @@
+{
+  "/graphql": {
+      "target": "localhost:4000",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite": {
+          "^/graphql": ""
+      }
+  }
+}

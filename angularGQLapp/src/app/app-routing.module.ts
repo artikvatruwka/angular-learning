@@ -1,3 +1,5 @@
+import { MateriaListComponent } from './screens/inventory-screen/materia-list/materia-list.component';
+import { MainMenuScreenComponent } from './screens/main-menu-screen/main-menu-screen.component';
 import { LoadingScreenComponent } from './screens/loading-screen/loading-screen.component';
 import { InventoryScreenComponent } from './screens/inventory-screen/inventory-screen.component';
 import { NotFoundScreenComponent } from './screens/not-found-screen/not-found-screen.component';
@@ -11,6 +13,10 @@ export enum routeNames {
   mainMenu = 'main-menu',
   notFound = 'page-not-found',
   loading = 'loading',
+}
+export enum inventoryRouteNames {
+  materia = 'materia',
+  materiaView = 'materia/:id',
 }
 
 const routes: Routes = [
@@ -26,10 +32,21 @@ const routes: Routes = [
   {
     path: routeNames.inventory,
     component: InventoryScreenComponent,
+    children: [
+      { path: '', redirectTo: 'tracks', pathMatch: 'full' },
+      {
+        path: inventoryRouteNames.materia,
+        component: MateriaListComponent,
+      },
+    ],
   },
   {
     path: routeNames.loading,
     component: LoadingScreenComponent,
+  },
+  {
+    path: routeNames.mainMenu,
+    component: MainMenuScreenComponent,
   },
   {
     path: routeNames.notFound,

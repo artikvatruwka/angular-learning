@@ -1,4 +1,4 @@
-import { gql }from 'apollo-server';
+import { gql } from 'graphql-tag';
 import  fs  from "fs";
 import  path from "path";
 import { fileURLToPath } from 'url';
