@@ -1,1 +1,12 @@
-<p>materia-view works!</p>
+<div class="view">
+  <app-icon *ngIf="!!getColor()" [filename]="getColor()!" [size]="128"></app-icon>
+  <p>{{ materia.label }}</p>
+  <table>
+    <tr>
+      <th *ngFor="let header of materia.headings">{{ header }}</th>
+    </tr>
+    <tr>
+      <th *ngFor="let value of materia.value">{{ value }}</th>
+    </tr>
+  </table>
+</div>

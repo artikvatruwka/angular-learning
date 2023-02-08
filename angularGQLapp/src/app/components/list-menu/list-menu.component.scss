@@ -11,10 +11,21 @@
   margin: 2px 0;
   position: relative;
 
+  &.black {
+    background: linear-gradient(90deg, rgba(0, 0, 0) 0%, transparent 100% );
+    a {
+      color: #ffffff;
+    }
+    &:hover {
+
+        background: linear-gradient(90deg, rgba(41, 159, 255, 1) 0%,rgba(20, 68, 107, 0.356) 60%,  transparent 100% );
+
+    }
+  }
+
   a {
     border-left: 2px solid rgba(227, 242, 255, 0.3);
     font-size: 24px;
-    font-family: sans-serif;
     display: block;
     padding: 4px 4px 4px 16px;
     width: 100%;

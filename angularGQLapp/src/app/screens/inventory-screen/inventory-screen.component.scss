@@ -1,0 +1,19 @@
+.screen {
+  background: linear-gradient(150deg, rgba(36, 129, 225),rgba(0, 0, 50));
+  height: 100vh;
+
+  .bg-overlay {
+    height: 100%;
+    background: radial-gradient(rgba(0, 0, 50,0.3) 0%,rgba(0, 0, 50,0.3) 30%,rgba(36, 129, 225,0.2) 40%, transparent 100%);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+
+    .item {
+      margin: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      background: linear-gradient(150deg, rgba(36, 129, 225, 0.5),rgba(0, 0, 50, 0.5));
+      overflow: hidden;
+    }
+  }
+}

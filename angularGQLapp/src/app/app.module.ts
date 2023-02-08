@@ -15,7 +15,6 @@ import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { MateriaListComponent } from './screens/inventory-screen/materia-list/materia-list.component';
 import { MateriaViewComponent } from './screens/inventory-screen/materia-view/materia-view.component';
-import { ItemsListComponent } from './components/items-list/items-list.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +29,6 @@ import { ItemsListComponent } from './components/items-list/items-list.component
     IconComponent,
     MateriaListComponent,
     MateriaViewComponent,
-    ItemsListComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

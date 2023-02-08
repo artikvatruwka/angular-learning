@@ -26,4 +26,5 @@ export type MenuItem = MenuItemLink | MenuItemButton;
 })
 export class ListMenuComponent {
   @Input() items: MenuItem[] = [];
+  @Input() color: 'blue' | 'black' = 'blue';
 }

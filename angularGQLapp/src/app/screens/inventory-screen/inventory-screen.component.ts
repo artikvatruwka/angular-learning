@@ -1,4 +1,5 @@
-import { inventoryRouteNames } from './../../app-routing.module';
+import { MenuItem } from 'src/app/components/list-menu/list-menu.component';
+import { inventoryRouteNames, routeNames } from './../../app-routing.module';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,4 +9,21 @@ import { Component } from '@angular/core';
 })
 export class InventoryScreenComponent {
   links = inventoryRouteNames;
+  menuCategories: MenuItem[] = [
+    {
+      type: 'link',
+      label: 'Materias',
+      routerLink: inventoryRouteNames.materia,
+    },
+    {
+      type: 'link',
+      label: 'Close',
+      routerLink: `/${routeNames.inventory}`,
+    },
+    {
+      type: 'link',
+      label: 'Quit',
+      routerLink: `../`,
+    },
+  ];
 }

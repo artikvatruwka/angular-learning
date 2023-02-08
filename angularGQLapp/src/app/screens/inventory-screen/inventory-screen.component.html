@@ -1,4 +1,10 @@
-<p>inventory-screen works!</p>
-<a [routerLink]="links.materia">show materias</a>
-<a [routerLink]="'./'">show materias</a>
-<router-outlet></router-outlet>
+<main class="screen">
+  <div class="bg-overlay">
+    <div class="item">
+      <app-list-menu [items]="menuCategories" [color]="'black'"></app-list-menu>
+    </div>
+    <div class="item">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</main>

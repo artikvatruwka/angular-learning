@@ -38,6 +38,10 @@ const routes: Routes = [
         path: inventoryRouteNames.materia,
         component: MateriaListComponent,
       },
+      {
+        path: inventoryRouteNames.materiaView,
+        component: MateriaListComponent,
+      },
     ],
   },
   {

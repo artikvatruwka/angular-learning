@@ -1,1 +1,4 @@
-<app-items-list [items]="sanitizedMaterias"></app-items-list>
+<div class="view">
+  <app-list-menu class="list" [items]="sanitizedMaterias" [color]="'black'"></app-list-menu>
+  <app-materia-view class="item-view" *ngIf="!!selectedMateria" [materia]="selectedMateria"></app-materia-view>
+</div>

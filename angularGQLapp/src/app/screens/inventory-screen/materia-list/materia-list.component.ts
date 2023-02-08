@@ -1,23 +1,17 @@
-import { ItemsListItem } from './../../../components/items-list/items-list.component';
-import { MateriaViewGQL, MateriaListGQL, MateriaListQuery, MateriaViewQuery, Materia } from 'src/app/graphql/generated';
+import { MateriaViewGQL, MateriaListGQL, MateriaListQuery, MateriaViewQuery } from 'src/app/graphql/generated';
 import { Component, OnInit } from '@angular/core';
-import { assets } from 'src/assets/assets';
+import { MenuItem } from 'src/app/components/list-menu/list-menu.component';
+import { ActivatedRoute } from '@angular/router';
 
-const materiaIcon = (color?: string | null): (typeof assets)[number] | undefined => {
-  if (color === 'green') return '/assets/icons/green-materia.png';
-  if (color === 'blue') return '/assets/icons/blue-materia.png';
-  if (color === 'red') return '/assets/icons/red-materia.png';
-  if (color === 'yellow') return '/assets/icons/yellow-materia.png';
-  if (color === 'purple') return '/assets/icons/purple-materia.png';
-  return;
-};
-
-const materiaToListItem = (materia: MateriaListQuery['getMaterias'][number]): ItemsListItem | undefined => {
+const materiaToListItem = (
+  materia: MateriaListQuery['getMaterias'][number],
+  itemActive: boolean
+): MenuItem | undefined => {
   if (materia === null) return;
   return {
-    icon: materiaIcon(materia?.color),
-    id: materia._id || '',
     label: materia?.label || '',
+    type: 'link',
+    routerLink: `${itemActive ? '../' : ''}${materia._id}`,
   };
 };
 
@@ -27,29 +21,34 @@ const materiaToListItem = (materia: MateriaListQuery['getMaterias'][number]): It
   styleUrls: ['./materia-list.component.scss'],
 })
 export class MateriaListComponent implements OnInit {
-  constructor(private materiaList: MateriaListGQL, private materia: MateriaViewGQL) {}
+  constructor(private materiaList: MateriaListGQL, private materia: MateriaViewGQL, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.openMaterias();
+    this.route.params.subscribe((item) => {
+      this.selectedId = item['id'];
+      this.openMateriaView(item['id']);
+    });
   }
 
   materias?: MateriaListQuery['getMaterias'];
   selectedMateria?: MateriaViewQuery['materia'];
-
-  sanitizedMaterias: ItemsListItem[] = [];
+  sanitizedMaterias: MenuItem[] = [];
+  selectedId?: string;
 
   openMaterias(): void {
     this.materiaList.fetch().subscribe((val) => {
       this.materias = val.data.getMaterias;
       this.sanitizedMaterias = val.data.getMaterias
-        .map(materiaToListItem)
-        .filter((item) => item != undefined) as ItemsListItem[];
+        .map((item) => materiaToListItem(item, !!this.selectedId))
+        .filter((item) => item != undefined) as MenuItem[];
     });
   }
 
-  openMateriaView(): void {
-    this.materia.fetch().subscribe((materia) => {
+  openMateriaView(id: string): void {
+    this.materia.fetch({ materiaId: id }).subscribe((materia) => {
       this.selectedMateria = materia.data.materia;
+      console.log(materia.data.materia);
     });
   }
 }
